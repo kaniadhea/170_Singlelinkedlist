@@ -188,6 +188,6 @@ int main() {
 				cout << "terjadi kesalahan" << endl;
 			}
 		}
-	} while (pilihan != 5)
+	} while (pilihan != 5);
 }
 
