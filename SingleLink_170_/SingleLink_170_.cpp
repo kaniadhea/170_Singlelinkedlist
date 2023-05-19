@@ -100,7 +100,7 @@ void traverse() {
 	else {
 		Node* currentNode = START;
 		while (currentNode != NULL) {
-			cout << "NIM: " << currentNode->noMhs << ",Nama:" << currentNode->nama << endl;
+			cout << "NIM: " << currentNode->noMhs << ",Nama:" << currentNode->name << endl;
 			currentNode = currentNode->next;
 		}
 	}
@@ -108,7 +108,7 @@ void traverse() {
 
 void searchData() {
 	if (listEmpty) {
-		couot << "List kosong" << endl;
+		cout << "List kosong" << endl;
 		system("pause");
 		system("cls");
 		return;
@@ -116,13 +116,27 @@ void searchData() {
 	else {
 		int nim; cout << "Masukkan NIM: ";
 		cin >> nim;
-		Node* current Node = START;
+		Node* currentNode = START;
 		while (currentNode != NULL) {
-			if (currentNoode->noMhs == nim) {
-				cout << "NIM: " << current->noMhs << ",Nama: " << currentNode->name << endl;
+			if (currentNode->noMhs == nim) {
+				cout << "NIM: " << currentNode->noMhs << ",Nama: " << currentNode->name << endl;
 				return;
 				{
 					currentNode = currentNode->next;
+				}
+				cout << "Data tidak ditemukan" << endl;
+			}
+		}
+	}
+}
+
+int main() {
+	int pilihan;
+	do
+	{
+		try
+		{
+
 		}
 	}
 }
