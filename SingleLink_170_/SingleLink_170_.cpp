@@ -147,7 +147,7 @@ int main() {
 			{
 			case 1:
 				addNode();
-				coout << "Data Berhasil Ditambahkan" << endl;
+				cout << "Data Berhasil Ditambahkan" << endl;
 				system("pause");
 				system("cls");
 				break;
@@ -167,13 +167,13 @@ int main() {
 					system("pause");
 					system("cls");
 				}
-				else
+				else {
 					cout << "Data tidak ditemukan" << endl;
-				break;
+					break;
 			case 3:
 				traverse();
 				break;
-			case 4: 
+			case 4:
 				searchData();
 				break;
 			case 5:
@@ -181,11 +181,13 @@ int main() {
 			default:
 				cout << "Pilihan tidak ada" << endl;
 				break;
-
-
+				}
 			}
-
+			catch (exception e);
+			{
+				cout << "terjadi kesalahan" << endl;
+			}
 		}
-	}
+	} while (pilihan != 5)
 }
 
