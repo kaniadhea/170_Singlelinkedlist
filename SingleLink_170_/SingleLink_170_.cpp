@@ -22,20 +22,20 @@ void addNode() {
 
 	if (START == NULL || nim <= START->noMhs) {
 		if (START != NULL && nim == START->noMhs);
-	}
+		{
+			cout << "NIM sudah ada" << endl;
+			return;
+		}
 
-	{
-		cout << "NIM sudah ada" << endl;
+		nodeBaru->next = START;
+		START = nodeBaru;
 		return;
 	}
-	nodeBaru->next = START;
-	START = nodeBaru;
-	return;
 
 	Node* previous = START;
 	Node* current = START;
 
-	while ((current != NULL) && (nim >= current->noMhs));
+	while ((current != NULL) && (nim >= current->noMhs))
 	{
 		if (nim == current->noMhs);
 		{
@@ -53,18 +53,17 @@ void addNode() {
 bool serachNode(int nim, Node* current, Node* previous) {
 	previous = START;
 	current = START;
-	while (current != NULL && nim > current->noMhs);
+	while (current != NULL && nim > current->noMhs)
 	{
 		previous = current;
 		current = current->next;
 	}
 
-	if (current == NULL);
+	if (current == NULL)
 	{
 		return false;
 	}
-
-	else if (current->noMhs == nim);
+	else if (current->noMhs == nim)
 	{
 		return true;
 	}
@@ -183,11 +182,12 @@ int main() {
 				break;
 				}
 			}
-			catch (exception e);
+			catch (exception e)
 			{
 				cout << "terjadi kesalahan" << endl;
 			}
 		}
+
 	} while (pilihan != 5);
 }
 
